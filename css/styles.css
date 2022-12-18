@@ -11,6 +11,8 @@
     --text-light-grey: #757575;
     --header-border: #ECECEC;
     --border-color: #eeeeee;
+    --icon-team: #AFB1B8;
+    --background-dark-transparent: #2F303A;
 }
 * {
     box-sizing: border-box;
@@ -102,6 +104,9 @@ body {
 
 .hero-section {
     background-color: var(--dark-background);
+    background: linear-gradient(var(--background-dark-transparent),
+    var(--background-dark-transparent));
+    background-image: url(../images/bg.jpg);
 }
 .hero-section h1 {
     font-weight: 900;
@@ -137,6 +142,7 @@ body {
     line-height: 1.14;
     font-weight: 700;
     color: var(--text-dark);
+    padding-bottom: 10px;
 }
 .usp-blocks p {
     font-size: 14px;
@@ -170,7 +176,13 @@ body {
     column-gap: 30px; 
     justify-content: center;
 }
-.list-team-wrapper li {
+
+/*
+
+
+*/
+
+.list-team-wrapper > li {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -274,6 +286,14 @@ body {
     vertical-align: bottom;
 }
 
+/*Nasi klienci*/
+.client {
+    font-size: 36px;
+    line-height: 1.16;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+}
 /*FOOTER*/
 .footer-wrapper {
     background-color: var(--dark-background);
@@ -281,6 +301,9 @@ body {
 }
 .section-footer {
     padding: 0 15px;
+    display: flex;
+    column-gap: 70px;
+    justify-content: baseline;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -334,3 +357,97 @@ body {
 .address-items a:hover {
     color: var(--light-blue-bg);
 }
+
+/*SVG*/
+
+.icon-header {
+    fill: var(--text-light-grey);
+    margin-right: 10px;
+}
+.contact-links a:hover svg {
+    fill: var(--light-blue-bg);
+}
+.usp-icon-wrapper {
+    background-color: var(--lighter-white-bg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+.list-team-icon {
+    fill: var(--icon-team);
+}
+.team-icon-wrapper {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+.team-icon-wrapper a {
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.team-icon-wrapper a:hover {
+    background-color: var(--light-blue-bg);
+}
+.team-icon-wrapper a:hover svg {
+    fill: var(--text-white);
+}
+.client-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.client-icon-wrapper li {
+    border: 1px solid var(--icon-team);
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+.client-icon {
+    fill: var(--icon-team)
+}
+.client-icon-wrapper li:hover {
+    border: 1px solid var(--text-blue);
+}
+.client-icon-wrapper li:hover svg {
+    fill: var(--text-blue);
+}
+.contact {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-white);
+    margin-top: 10px;
+}
+.social-media-wrapper {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.social-media-wrapper a {
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-media {
+    fill: var(--white-bg);
+}
+.social-media-wrapper li:hover {
+    background-color: var(--light-blue-bg);
+    border-radius: 50%;
+}
+
