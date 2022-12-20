@@ -13,6 +13,9 @@
     --border-color: #eeeeee;
     --icon-team: #AFB1B8;
     --background-dark-transparent: #2F303A;
+    --box-shadow-port: rgba(0, 0, 0, 0.1);
+    --box-shadow-port2: rgba(0, 0, 0, 0.08);
+    --box-shadow-port3: rgba(0, 0, 0, 0.12);
 }
 * {
     box-sizing: border-box;
@@ -249,11 +252,12 @@ body {
     background-color: var(--light-blue-bg);
     color: var(--text-white);
     border-radius: 4px;
+    box-shadow: 0px 3px 1px var(--box-shadow-port), 0px 1px 2px var(--box-shadow-port2), 0px 2px 2px var(--box-shadow-port3);
 }
 .filters button:focus {
     background-color: var(--light-blue-bg);
     color: var(--white-bg);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px var(--box-shadow-port), 0px 1px 2px var(--box-shadow-port2), 0px 2px 2px var(--box-shadow-port3);
     border-radius: 4px;
 }
 
@@ -264,6 +268,9 @@ body {
     background-color: var(--white-bg);
     list-style: none;
     margin-bottom: 50px;
+}
+.set-card li:hover {
+    box-shadow: 0px 1px 1px var(--box-shadow-port3), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .set-card h3 {
     font-size: 18px;
