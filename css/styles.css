@@ -110,6 +110,8 @@ body {
     background: linear-gradient(var(--background-dark-transparent),
     var(--background-dark-transparent));
     background-image: url(../images/bg.jpg);
+    width: 1600px;
+    margin: 0 auto;
 }
 .hero-section h1 {
     font-weight: 900;
